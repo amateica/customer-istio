@@ -35,7 +35,7 @@ steps:
   args:
   - 'rollout'
   - 'restart'
-  - 'deployment/demo-cicd'
+  - 'deployment/customer'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
   - 'CLOUDSDK_CONTAINER_CLUSTER=istio-cluster'
