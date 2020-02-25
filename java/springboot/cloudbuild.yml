@@ -11,6 +11,7 @@ steps:
   - 'build'
   - '-t'
   - 'gcr.io/cirrus-initial-project/customer:latest'
+  - '-f java/springboot/Dockerfile'
   - '.'
 
 # This step pushes the image to Container Registry
@@ -26,7 +27,7 @@ steps:
   args:
   - 'apply'
   - '-f'
-  - 'kubernetes.yml'
+  - 'java/springboot/kubernetes.yml'
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
   - 'CLOUDSDK_CONTAINER_CLUSTER=istio-cluster'
