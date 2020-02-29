@@ -27,6 +27,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: customer
+  namespace: istio-demo
   labels:
     app: customer    
 spec:
