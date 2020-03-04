@@ -7,9 +7,9 @@ metadata:
     app: customer
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      app: customer
+#  selector:
+#    matchLabels:
+#      app: customer
   template:
     metadata:
       labels:
@@ -21,6 +21,7 @@ spec:
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
+
 ---
 apiVersion: v1
 kind: Service
