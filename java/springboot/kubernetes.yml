@@ -28,7 +28,7 @@ metadata:
   name: customer
   namespace: istio-demo
   labels:
-    app: customer
+    app: customer    
 spec:
   ports:
   - name: http
